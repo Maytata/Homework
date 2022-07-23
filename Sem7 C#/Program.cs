@@ -112,10 +112,10 @@ int colums = random.Next (1,6);
 int[,] array = new int[rows,colums];
 FillArray1(array);
 PrintArray1(array);
-for (int j = 0; j < rows; j++)
+for (int j = 0; j < colums; j++)
  {
    int sum = 0;
-   for (int i = 0; i < colums; i++)
+   for (int i = 0; i < rows; i++)
    {
     sum += array[i,j];
    }
